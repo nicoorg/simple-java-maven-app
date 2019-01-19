@@ -1,4 +1,4 @@
-@Library ('shared-library-nico') _
+@Library ('shared-library-nico@devel') _
 def userInput
 
 pipeline {
