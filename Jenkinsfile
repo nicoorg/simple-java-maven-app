@@ -11,12 +11,5 @@ pipeline {
                 }
             }
         }
-        stage('Get parameters from input') {
-            steps {
-                echo ("Env: "+userInput['env'])
-                echo ("Target: "+userInput['target'])
-            }
-        }
-
     }
 }
