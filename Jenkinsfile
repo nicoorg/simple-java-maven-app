@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('list branches') {
             steps {
-                    userInput = inputBranches
+                inputBranches
             }
         }
     }
