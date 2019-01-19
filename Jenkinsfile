@@ -1,5 +1,5 @@
 @Library ('shared-library-nico@devel') _
-def userInput
+
 
 pipeline {
     agent any
