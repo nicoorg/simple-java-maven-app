@@ -7,7 +7,7 @@ pipeline {
         stage('list branches') {
             steps {
                 script {
-                    input_branches.input_box
+                    inputBranches.inputBox
                 }
             }
         }
