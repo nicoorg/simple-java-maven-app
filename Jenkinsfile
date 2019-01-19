@@ -1,6 +1,5 @@
 @Library ('shared-library-nico') _
-
-
+def userInput
 
 pipeline {
     agent any
@@ -8,7 +7,7 @@ pipeline {
         stage('list branches') {
             steps {
                 script {
-                    input_branches.input_box
+                    userInput = input_branches.input_box
                 }
             }
         }
