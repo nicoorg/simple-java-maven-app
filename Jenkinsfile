@@ -12,7 +12,7 @@ pipeline {
         stage('list branches') {
             steps {
                 script {
-
+                    userInput
                 }
             }
         }
