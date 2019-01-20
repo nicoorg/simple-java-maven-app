@@ -2,7 +2,7 @@
 def userInput = input(
     id: 'userInput', message: 'Let\'s promote?', parameters: [
     [$class: 'ChoiceParameterDefinition',
-        choices: ['one' .'tow. three'],
+        choices: ['one' , 'two' , 'three'],
         description: 'dropdown',
         name: 'dropdown'
         ]
