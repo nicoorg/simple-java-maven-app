@@ -4,7 +4,9 @@
 
 node {
     stage  ('Example') {
-        inputBranches
+        script {
+            inputBranches
+        }
         echo ("hello world")
     }
 }
