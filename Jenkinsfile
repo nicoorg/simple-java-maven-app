@@ -1,6 +1,6 @@
 @Library ('shared-library-nico@devel') _
 
-def userInput = inputBranches
+inputBranches
 
 node {
     stage  ('Example') {
