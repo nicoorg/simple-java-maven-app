@@ -6,7 +6,7 @@ log.info('este es mi mensaje')
 
 node {
     stage  ('Example') {
-        def mybranch = branchesInput.ibranch()
+        def mybranch = branchesInput()
         log.test('.')
         log.info ("El branch es ${mybranch}")
     }
