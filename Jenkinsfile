@@ -2,12 +2,11 @@
 def userInput = input(
     id: 'userInput', message: 'Let\'s promote?', parameters: [
     [$class: 'ChoiceParameterDefinition',
-        choices: ['one' .'tow. three'], 
+        choices: ['one' .'tow. three'],
         description: 'dropdown',
         name: 'dropdown'
         ]
-    ]
-])
+    ])
 
 pipeline {
     agent any
