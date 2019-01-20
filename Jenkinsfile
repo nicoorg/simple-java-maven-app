@@ -1,18 +1,9 @@
 @Library ('shared-library-nico@devel') _
 
-def userInput
+def userInput = inputBranches
 
-pipeline {
-    agent any
-    stages {
-
-        stage('list branches') {
-            steps {
-                script {
-                    inputBranches
-                }
-                echo ("Escoja una rama")
-            }
-        }
+node {
+    stage  ('Example') {
+        echo
     }
 }
