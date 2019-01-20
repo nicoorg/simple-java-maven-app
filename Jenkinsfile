@@ -2,11 +2,11 @@
 
 log.info('este es mi mensaje')
 
-branchesInput.ibranch()
+def mybranch = branchesInput.ibranch()
 
 node {
     stage  ('Example') {
         log.test('.')
-        echo ("hello world")
+        log.info ("El branch es ${mybranch}")
     }
 }
