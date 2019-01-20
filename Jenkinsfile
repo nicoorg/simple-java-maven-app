@@ -2,7 +2,7 @@
 
 log.info('este es mi mensaje')
 
-branchesInput.ibranch('test')
+branchesInput.ibranch
 
 node {
     stage  ('Example') {
