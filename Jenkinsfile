@@ -4,6 +4,6 @@ def userInput = inputBranches
 
 node {
     stage  ('Example') {
-        echo
+        echo (userInput)
     }
 }
