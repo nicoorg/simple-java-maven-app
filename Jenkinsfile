@@ -1,12 +1,6 @@
 @Library ('shared-library-nico@devel') _
-def userInput = input(
-    id: 'userInput', message: 'Let\'s promote?', parameters: [
-    [$class: 'ChoiceParameterDefinition',
-        choices: ['one' , 'two' , 'three'],
-        description: 'dropdown',
-        name: 'dropdown'
-        ]
-    ])
+
+def userInput
 
 pipeline {
     agent any
@@ -14,7 +8,7 @@ pipeline {
         stage('list branches') {
             steps {
                 script {
-                    userInput
+                    userInput = inputBranches
                 }
                 echo ("Escoja una rama")
             }
