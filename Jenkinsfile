@@ -4,7 +4,7 @@ log.info('este es mi mensaje')
 
 node {
     stage  ('Example') {
-        inputBranches
+        inputBranches.test
         echo ("hello world")
     }
 }
