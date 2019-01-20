@@ -6,10 +6,10 @@ pipeline {
     agent any
     stages {
         stage('list branches') {
+            script {
+                userInput = inputBranches
+            }
             steps {
-                script {
-                    userInput = inputBranches
-                }
                 echo ("Escoja una rama")
             }
         }
