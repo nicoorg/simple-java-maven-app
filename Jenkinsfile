@@ -4,7 +4,7 @@ def data = [1 ,2 ,3 ,4]
 
 log.info('este es mi mensaje')
 
-choice = branchesInput(data)
+branchesInput(data)
 
 node {
     stage  ('Example') {
