@@ -1,13 +1,10 @@
 @Library ('shared-library-nico@devel') _
 def userInput = input(
     id: 'userInput', message: 'Let\'s promote?', parameters: [
-    [$class: 'DropdownAutocompleteParameterDefinition',
-        defaultValue: '1',
+    [$class: 'ChoiceParameterDefinition',
+        choices: ['one' .'tow. three']
         description: 'dropdown',
-        name: 'dropdown' ,
-        dataProvider:
-            [$class: 'SimpleTextProvider' ,
-            autoCompleteData: 'one,two,three'
+        name: 'dropdown'
         ]
     ]
 ])
@@ -17,10 +14,10 @@ pipeline {
     stages {
         stage('list branches') {
             steps {
-                echo ("Escoja una rama")
                 script {
                     userInput
                 }
+                echo ("Escoja una rama")
             }
         }
     }
