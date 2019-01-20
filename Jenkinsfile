@@ -5,11 +5,12 @@ def userInput
 pipeline {
     agent any
     stages {
-        script {
-            userInput = inputBranches
-        }
+
         stage('list branches') {
             steps {
+                script {
+                    userInput = inputBranches
+                }
                 echo ("Escoja una rama")
             }
         }
