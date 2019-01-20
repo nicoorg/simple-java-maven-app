@@ -2,7 +2,7 @@
 
 log.info('este es mi mensaje')
 
-branchesInput.selectBranch()
+branchesInput.selectBranch
 
 node {
     stage  ('Example') {
