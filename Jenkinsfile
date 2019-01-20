@@ -1,10 +1,16 @@
 @Library ('shared-library-nico@devel') _
 def userInput = input(
     id: 'userInput', message: 'Let\'s promote?', parameters: [
-    [$class: 'TextParameterDefinition', defaultValue: 'uat', description: 'Environment', name: 'env'],
-    [$class: 'TextParameterDefinition', defaultValue: 'uat1', description: 'Target', name: 'target']
+    [$class: 'DropdownAutocompleteParameterDefinition',
+        defaultValue: '1',
+        description: 'dropdown',
+        name: 'dropdown' ,
+        dataProvider:
+            [$class: 'SimpleTextProvider' ,
+            autoCompleteData: ['one','two','three']
+        ]
+    ]
 ])
-
 
 pipeline {
     agent any
