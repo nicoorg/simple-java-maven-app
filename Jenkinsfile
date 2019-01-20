@@ -4,6 +4,6 @@ inputBranches
 
 node {
     stage  ('Example') {
-        echo (userInput)
+        echo ("hello world")
     }
 }
