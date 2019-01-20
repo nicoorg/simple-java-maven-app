@@ -1,12 +1,9 @@
 @Library ('shared-library-nico@devel') _
 
 
-
 node {
     stage  ('Example') {
-        script {
-            inputBranches
-        }
+        inputBranches
         echo ("hello world")
     }
 }
