@@ -7,7 +7,7 @@ def userInput = input(
         name: 'dropdown' ,
         dataProvider:
             [$class: 'SimpleTextProvider' ,
-            autoCompleteData: ['one','two','three']
+            autoCompleteData: 'one,two,three'
         ]
     ]
 ])
