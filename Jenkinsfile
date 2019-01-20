@@ -9,7 +9,7 @@ pipeline {
         stage('list branches') {
             steps {
                 script {
-                    userInput = inputBranches
+                    inputBranches
                 }
                 echo ("Escoja una rama")
             }
