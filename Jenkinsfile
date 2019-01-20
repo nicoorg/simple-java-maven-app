@@ -17,6 +17,7 @@ pipeline {
     stages {
         stage('list branches') {
             steps {
+                echo ("Escoja una rama")
                 script {
                     userInput
                 }
