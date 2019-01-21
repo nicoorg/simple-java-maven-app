@@ -2,12 +2,10 @@
 
 log.info('este es mi mensaje')
 
-properties([
-    parameters([
-        string(defaultValue: '/data', name: 'Directory'),
-        , string(defaultValue: 'Dev', name: 'DEPLOY_ENV')
-        ])
-])
+properties(
+    [parameters([choice(choices: ["A", "B", "C"].join("\n"),
+    description: 'Some choice parameter',
+    name: 'SOME_CHOICE')])])
 
 node {
     stage  ('Example') {
